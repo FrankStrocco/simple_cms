@@ -1,0 +1,26 @@
+<h1>hello from hello</h1>
+
+<%= 1 + 1 %>
+
+<br />
+<% target = "World" %>
+<%= "Hello #{target}" %>
+<br />
+
+<% @array.each do |n| %>
+  <%= n %> <br />
+
+<% end %>
+
+
+<br/>
+
+<a href="/demo/index">Index Page<a/><br />
+  <%= link_to("Hello Page Two", {action: 'index'}) %><b />
+
+<br />
+
+ID: <%= @id %><br />
+ID: <%= params[:id] %><br />
+ID: <%= params["id"] %><br />
+Page: <%= @page %><br/>
